@@ -151,6 +151,7 @@ This allows the services to communicate in real-time without blocking each other
 
 ## Bonus: Containerization
 Each component of the system (aside from the visualizer) has its own Dockerfile and can be built and run as a separate container. The `docker-compose.yml` file is used to define the services and their dependencies, allowing the entire system to be run with a single command.
+Just make sure to add a `.env` file with the following environment variable: `ENVIROMENT=production`
 ```
 docker-compose up
 ```
